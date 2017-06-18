@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         a.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                 gazetemodel  gazete = adapterView.getItemAtPosition(i);
+				gazetemodel  gazete = adapterView.getItemAtPosition(i);
                 Intent intent = new Intent(getApplicationContext(), haberSayfasi.class);
                 intent.putExtra("url", gazete.gazeteurl);
                 startActivity(intent);
